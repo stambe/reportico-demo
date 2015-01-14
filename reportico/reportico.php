@@ -36,7 +36,7 @@
 define("DB_HOST", "localhost");
 define("DB_NAME", "reportico-demo");
 define("DB_USER", "root");
-define("DB_PASS", "");
+define("DB_PASS", "cuelogic");
 
 define("BASE_ROOT", "http://localhost/reportico-demo/reportico");
 define("HOST_NAME", "http://localhost/reportico-demo");

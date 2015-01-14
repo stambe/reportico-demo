@@ -19,8 +19,8 @@
 <body>
     <p><img src="../MAMP-PRO-Logo.png" id="logo" alt="MAMP PRO Logo" width="250" height="49" /></p>
     <?php
-        set_include_path($_SERVER["DOCUMENT_ROOT"].'/reportico-demo/reportico/');
-        require_once('reportico.php'); 
+        
+        require_once($_SERVER["DOCUMENT_ROOT"].'/reportico-demo/reportico/reportico.php');
         $a = new reportico();
         $a->embedded_report = true;
         $a->forward_url_get_parameters = "x1=y1&x2=y2"; 

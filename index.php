@@ -14,6 +14,8 @@
         padding: 10px 20px 20px 20px;
     }
 </style>
+<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script type="text/javascript">var BASE_ROOT = 'http://localhost/reportico-demo/reportico'; </script>
 </head>
 
 <body>
@@ -26,5 +28,17 @@
         $a->forward_url_get_parameters = "x1=y1&x2=y2"; 
         $a->execute();
     ?>
+
+    <script type="text/javascript">
+        var query = "reportico_session_name=bd896b3cb5fcb74ad7386c04eb1ef661_&admin_password=123&login=1&reportico_ajax_called=1";
+        $.ajax({
+                type: "POST",
+                url: BASE_ROOT + "/run.php",
+                data: query,
+                success: function(response){
+                    $("#reportico_container").html(response);
+                }
+            });
+    </script>
 </body>
 </html>

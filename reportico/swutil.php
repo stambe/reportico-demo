@@ -1081,6 +1081,7 @@ function get_reportico_url_path()
         if ( $above == "/" )
             $above = "";
         $url_path = $above."/".session_request_item('reporticourl', dirname($newpath));
+        $url_path = str_replace("reportico/reportico", "reportico", $url_path);
 
         // If reportico source files are installed in root directory or in some other 
         // scenarios such as an invalid linkbaseurl parameter the dirname of the

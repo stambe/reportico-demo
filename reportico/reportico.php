@@ -38,8 +38,8 @@ define("DB_NAME", "reportico-demo");
 define("DB_USER", "root");
 define("DB_PASS", "");
 
-define("BASE_ROOT", "");
-define("HOST_NAME", "http://localhost");
+define("BASE_ROOT", "http://localhost/reportico-demo/reportico");
+define("HOST_NAME", "http://localhost/reportico-demo");
 define("PROJECT_NAME", "2ndmd");
 define("PROJECT_TITLE", "2nd MD");
 
